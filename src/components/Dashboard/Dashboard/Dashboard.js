@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import logo from "../../../assets/img/Logo/logo-1.png";
 
 const Dashboard = () => {
@@ -54,10 +54,10 @@ const Dashboard = () => {
                 </Link>
               </li>
               <li>
-                <Link to="addProduct">
+                <Link to="addItCourses">
                   <a className="s-sidebar__nav-link" href="#0">
                     <i className="fa fa-product-hunt"></i>
-                    <em>Add Product</em>
+                    <em>Add IT Courses</em>
                   </a>
                 </Link>
               </li>
@@ -77,94 +77,7 @@ const Dashboard = () => {
                   </a>
                 </Link>
               </li>
-              <li>
-                <Link to="manageProduct">
-                  <a className="s-sidebar__nav-link" href="#0">
-                    <i className="fa fa-user"></i>
-                    <em>ManageProduct</em>
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link to="manageProduct">
-                  <a className="s-sidebar__nav-link" href="#0">
-                    <i className="fa fa-user"></i>
-                    <em>ManageProduct</em>
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link to="manageProduct">
-                  <a className="s-sidebar__nav-link" href="#0">
-                    <i className="fa fa-user"></i>
-                    <em>ManageProduct</em>
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link to="manageProduct">
-                  <a className="s-sidebar__nav-link" href="#0">
-                    <i className="fa fa-user"></i>
-                    <em>ManageProduct</em>
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link to="manageProduct">
-                  <a className="s-sidebar__nav-link" href="#0">
-                    <i className="fa fa-user"></i>
-                    <em>ManageProduct</em>
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link to="manageProduct">
-                  <a className="s-sidebar__nav-link" href="#0">
-                    <i className="fa fa-user"></i>
-                    <em>ManageProduct</em>
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link to="manageProduct">
-                  <a className="s-sidebar__nav-link" href="#0">
-                    <i className="fa fa-user"></i>
-                    <em>ManageProduct</em>
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link to="manageProduct">
-                  <a className="s-sidebar__nav-link" href="#0">
-                    <i className="fa fa-user"></i>
-                    <em>ManageProduct</em>
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link to="manageProduct">
-                  <a className="s-sidebar__nav-link" href="#0">
-                    <i className="fa fa-user"></i>
-                    <em>ManageProduct</em>
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link to="manageProduct">
-                  <a className="s-sidebar__nav-link" href="#0">
-                    <i className="fa fa-user"></i>
-                    <em>ManageProduct</em>
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link to="manageProduct">
-                  <a className="s-sidebar__nav-link" href="#0">
-                    <i className="fa fa-user"></i>
-                    <em>ManageProduct</em>
-                  </a>
-                </Link>
-              </li>
+
               <li>
                 <a className="s-sidebar__nav-link" href="#0">
                   <button
@@ -181,7 +94,9 @@ const Dashboard = () => {
         </div>
 
         {/* Content */}
-        <main className="s-layout__content">{/* <Outlet /> */} </main>
+        <main className="s-layout__content">
+          <Outlet />
+        </main>
       </div>
     </div>
   );

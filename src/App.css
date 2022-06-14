@@ -1,5 +1,8 @@
 /* Dashboard */
 @import "./assets/css/Dashboard.css";
+@import "./assets/css/AddItCourses.css";
+@import "./assets/css/Payment.css";
+@import "./assets/css/Review.css";
 
 .App {
   text-align: center;
