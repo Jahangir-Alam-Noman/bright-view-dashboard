@@ -1,11 +1,13 @@
 import React from "react";
 import { Table } from "react-bootstrap";
+// import { Table } from "react-bootstrap";
 // Hello
 
 const Review = () => {
   return (
     <div>
       <h2>This is MyOrder Page</h2>
+      {/* <h2>This is MyOrder Page</h2> */}
       <Table striped bordered hover>
         <thead>
           <tr>
